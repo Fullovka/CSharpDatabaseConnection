@@ -1,0 +1,26 @@
+D:\Front-end developed\C#\Windows Forms Application\Database connection\Database connection\bin\Debug\Database connection.exe.config
+D:\Front-end developed\C#\Windows Forms Application\Database connection\Database connection\bin\Debug\Database connection.exe
+D:\Front-end developed\C#\Windows Forms Application\Database connection\Database connection\bin\Debug\Database connection.pdb
+D:\Front-end developed\C#\Windows Forms Application\Database connection\Database connection\bin\Debug\EntityFramework.dll
+D:\Front-end developed\C#\Windows Forms Application\Database connection\Database connection\bin\Debug\EntityFramework.SqlServer.dll
+D:\Front-end developed\C#\Windows Forms Application\Database connection\Database connection\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Front-end developed\C#\Windows Forms Application\Database connection\Database connection\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Front-end developed\C#\Windows Forms Application\Database connection\Database connection\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+D:\Front-end developed\C#\Windows Forms Application\Database connection\Database connection\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Front-end developed\C#\Windows Forms Application\Database connection\Database connection\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Front-end developed\C#\Windows Forms Application\Database connection\Database connection\bin\Debug\EntityFramework.xml
+D:\Front-end developed\C#\Windows Forms Application\Database connection\Database connection\bin\Debug\EntityFramework.SqlServer.xml
+D:\Front-end developed\C#\Windows Forms Application\Database connection\Database connection\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Front-end developed\C#\Windows Forms Application\Database connection\Database connection\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+D:\Front-end developed\C#\Windows Forms Application\Database connection\Database connection\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\Front-end developed\C#\Windows Forms Application\Database connection\Database connection\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Front-end developed\C#\Windows Forms Application\Database connection\Database connection\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Front-end developed\C#\Windows Forms Application\Database connection\Database connection\obj\Debug\Database connection.csproj.AssemblyReference.cache
+D:\Front-end developed\C#\Windows Forms Application\Database connection\Database connection\obj\Debug\Database connection.csproj.SuggestedBindingRedirects.cache
+D:\Front-end developed\C#\Windows Forms Application\Database connection\Database connection\obj\Debug\Database_connection.Form1.resources
+D:\Front-end developed\C#\Windows Forms Application\Database connection\Database connection\obj\Debug\Database_connection.Properties.Resources.resources
+D:\Front-end developed\C#\Windows Forms Application\Database connection\Database connection\obj\Debug\Database connection.csproj.GenerateResource.cache
+D:\Front-end developed\C#\Windows Forms Application\Database connection\Database connection\obj\Debug\Database connection.csproj.CoreCompileInputs.cache
+D:\Front-end developed\C#\Windows Forms Application\Database connection\Database connection\obj\Debug\Database connection.csproj.CopyComplete
+D:\Front-end developed\C#\Windows Forms Application\Database connection\Database connection\obj\Debug\Database connection.exe
+D:\Front-end developed\C#\Windows Forms Application\Database connection\Database connection\obj\Debug\Database connection.pdb
