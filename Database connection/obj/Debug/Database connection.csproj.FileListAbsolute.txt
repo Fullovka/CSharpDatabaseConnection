@@ -17,10 +17,11 @@ D:\Front-end developed\C#\Windows Forms Application\Database connection\Database
 D:\Front-end developed\C#\Windows Forms Application\Database connection\Database connection\bin\Debug\System.Threading.Tasks.Extensions.xml
 D:\Front-end developed\C#\Windows Forms Application\Database connection\Database connection\obj\Debug\Database connection.csproj.AssemblyReference.cache
 D:\Front-end developed\C#\Windows Forms Application\Database connection\Database connection\obj\Debug\Database connection.csproj.SuggestedBindingRedirects.cache
-D:\Front-end developed\C#\Windows Forms Application\Database connection\Database connection\obj\Debug\Database_connection.Form1.resources
 D:\Front-end developed\C#\Windows Forms Application\Database connection\Database connection\obj\Debug\Database_connection.Properties.Resources.resources
 D:\Front-end developed\C#\Windows Forms Application\Database connection\Database connection\obj\Debug\Database connection.csproj.GenerateResource.cache
 D:\Front-end developed\C#\Windows Forms Application\Database connection\Database connection\obj\Debug\Database connection.csproj.CoreCompileInputs.cache
 D:\Front-end developed\C#\Windows Forms Application\Database connection\Database connection\obj\Debug\Database connection.csproj.CopyComplete
 D:\Front-end developed\C#\Windows Forms Application\Database connection\Database connection\obj\Debug\Database connection.exe
 D:\Front-end developed\C#\Windows Forms Application\Database connection\Database connection\obj\Debug\Database connection.pdb
+D:\Front-end developed\C#\Windows Forms Application\Database connection\Database connection\obj\Debug\Database_connection.FormAuthorization.resources
+D:\Front-end developed\C#\Windows Forms Application\Database connection\Database connection\obj\Debug\Database_connection.MainForm.resources

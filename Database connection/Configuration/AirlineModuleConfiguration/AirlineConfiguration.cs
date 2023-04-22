@@ -6,15 +6,11 @@ using System.Data.Entity.ModelConfiguration;
 
 namespace Database_connection.Configuration.AirlineModuleConfiguration
 {
-    public class AirlineConfiguration : EntityTypeConfiguration<Airline>
+    internal class AirlineConfiguration : EntityTypeConfiguration<Airline>
     {
-        public AirlineConfiguration() {
-
+        public AirlineConfiguration() 
+        {
             this.ToTable("Airline").HasKey(p => p.Id);
-
-            this.HasRequired(x => x.)
-                .WithMany()
-                .HasForeignKey(p => p.IdAirline);
         }
     }
 }

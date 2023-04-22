@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Database_connection.Context;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,11 +11,17 @@ using System.Windows.Forms;
 
 namespace Database_connection
 {
-    public partial class Form1 : Form
+    public partial class FormAuthorization : Form
     {
-        public Form1()
+        public FormAuthorization()
         {
             InitializeComponent();
+            db = new MainDBContext();
         }
+
+        public MainDBContext db;
+
+        public bool TheAccess = false;
+        public string TheAccountRole;
     }
 }
