@@ -30,39 +30,42 @@
         {
             this.textBoxLogin = new System.Windows.Forms.TextBox();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.AuthorizationButton = new System.Windows.Forms.Button();
             this.LoginLabel = new System.Windows.Forms.Label();
             this.PasswordLabel = new System.Windows.Forms.Label();
             this.TitleLabel = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.PasswordVisibility = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // textBoxLogin
             // 
-            this.textBoxLogin.Location = new System.Drawing.Point(171, 121);
+            this.textBoxLogin.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxLogin.Location = new System.Drawing.Point(171, 119);
             this.textBoxLogin.MaxLength = 32;
             this.textBoxLogin.Name = "textBoxLogin";
-            this.textBoxLogin.Size = new System.Drawing.Size(150, 20);
+            this.textBoxLogin.Size = new System.Drawing.Size(160, 29);
             this.textBoxLogin.TabIndex = 0;
             // 
             // textBoxPassword
             // 
-            this.textBoxPassword.Location = new System.Drawing.Point(171, 157);
+            this.textBoxPassword.Font = new System.Drawing.Font("Times New Roman", 14.25F);
+            this.textBoxPassword.Location = new System.Drawing.Point(171, 158);
             this.textBoxPassword.MaxLength = 32;
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.PasswordChar = '*';
-            this.textBoxPassword.Size = new System.Drawing.Size(150, 20);
+            this.textBoxPassword.Size = new System.Drawing.Size(160, 29);
             this.textBoxPassword.TabIndex = 1;
             // 
-            // button1
+            // AuthorizationButton
             // 
-            this.button1.Font = new System.Drawing.Font("Elephant", 14.25F);
-            this.button1.Location = new System.Drawing.Point(171, 197);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 40);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Войти";
-            this.button1.UseVisualStyleBackColor = true;
+            this.AuthorizationButton.Font = new System.Drawing.Font("Elephant", 14.25F);
+            this.AuthorizationButton.Location = new System.Drawing.Point(171, 198);
+            this.AuthorizationButton.Name = "AuthorizationButton";
+            this.AuthorizationButton.Size = new System.Drawing.Size(160, 40);
+            this.AuthorizationButton.TabIndex = 2;
+            this.AuthorizationButton.Text = "Войти";
+            this.AuthorizationButton.UseVisualStyleBackColor = true;
+            this.AuthorizationButton.Click += new System.EventHandler(this.AuthorizationButton_Click);
             // 
             // LoginLabel
             // 
@@ -79,7 +82,7 @@
             // 
             this.PasswordLabel.AutoSize = true;
             this.PasswordLabel.Font = new System.Drawing.Font("Elephant", 12.25F);
-            this.PasswordLabel.Location = new System.Drawing.Point(92, 157);
+            this.PasswordLabel.Location = new System.Drawing.Point(92, 165);
             this.PasswordLabel.Name = "PasswordLabel";
             this.PasswordLabel.Size = new System.Drawing.Size(73, 22);
             this.PasswordLabel.TabIndex = 5;
@@ -90,25 +93,26 @@
             // 
             this.TitleLabel.AutoSize = true;
             this.TitleLabel.Font = new System.Drawing.Font("Elephant", 16.25F);
-            this.TitleLabel.Location = new System.Drawing.Point(166, 74);
+            this.TitleLabel.Location = new System.Drawing.Point(166, 77);
             this.TitleLabel.Name = "TitleLabel";
             this.TitleLabel.Size = new System.Drawing.Size(166, 29);
             this.TitleLabel.TabIndex = 6;
             this.TitleLabel.Text = "Авторизация";
             // 
-            // checkBox1
+            // PasswordVisibility
             // 
-            this.checkBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.PasswordVisibility.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Image = global::Database_connection.Properties.Resources.eye_off_svgrepo_com__2___1___2_;
-            this.checkBox1.Location = new System.Drawing.Point(327, 148);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(53, 38);
-            this.checkBox1.TabIndex = 3;
-            this.checkBox1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.PasswordVisibility.AutoSize = true;
+            this.PasswordVisibility.Image = global::Database_connection.Properties.Resources.eye_off_svgrepo_com__2___1___2_;
+            this.PasswordVisibility.Location = new System.Drawing.Point(337, 154);
+            this.PasswordVisibility.Name = "PasswordVisibility";
+            this.PasswordVisibility.Size = new System.Drawing.Size(53, 38);
+            this.PasswordVisibility.TabIndex = 3;
+            this.PasswordVisibility.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.PasswordVisibility.UseVisualStyleBackColor = true;
+            this.PasswordVisibility.CheckedChanged += new System.EventHandler(this.PasswordVisibility_CheckedChanged);
             // 
             // FormAuthorization
             // 
@@ -118,8 +122,8 @@
             this.Controls.Add(this.TitleLabel);
             this.Controls.Add(this.PasswordLabel);
             this.Controls.Add(this.LoginLabel);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.PasswordVisibility);
+            this.Controls.Add(this.AuthorizationButton);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.textBoxLogin);
             this.Name = "FormAuthorization";
@@ -134,8 +138,8 @@
 
         private System.Windows.Forms.TextBox textBoxLogin;
         private System.Windows.Forms.TextBox textBoxPassword;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Button AuthorizationButton;
+        private System.Windows.Forms.CheckBox PasswordVisibility;
         private System.Windows.Forms.Label LoginLabel;
         private System.Windows.Forms.Label PasswordLabel;
         private System.Windows.Forms.Label TitleLabel;

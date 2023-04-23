@@ -16,12 +16,38 @@ namespace Database_connection
         public FormAuthorization()
         {
             InitializeComponent();
-            db = new MainDBContext();
+            _db = new MainDBContext();
         }
 
-        public MainDBContext db;
+        public MainDBContext _db;
 
         public bool TheAccess = false;
         public string TheAccountRole;
+
+        private void PasswordVisibility_CheckedChanged(object sender, EventArgs e)
+        {
+            textBoxPassword.PasswordChar = PasswordVisibility.Checked ? '\0' : '*';
+        }
+
+        private void AuthorizationButton_Click(object sender, EventArgs e)
+        {
+            string Login = textBoxLogin.Text;
+            string Password = textBoxPassword.Text;
+
+            bool isAuthenticated = users.Any(u => u.Login == login && u.Password == password);
+
+            if (isAuthenticated)
+            {
+                // Если пользователь найден, открываем главную форму
+                MainForm mainForm = new MainForm();
+                mainForm.Show();
+                this.Hide();
+            }
+            else
+            {
+                // Если пользователь не найден, выводим сообщение об ошибке
+                MessageBox.Show("Неправильный логин или пароль");
+            }
+        }
     }
 }
