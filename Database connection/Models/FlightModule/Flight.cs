@@ -35,7 +35,7 @@ namespace Database_connection.Models.FlightModule
         [ForeignKey("IdPlane")]
         public Plane Plane { get; set; }
 
-        public Flight(int id, DateTime departureTime, DateTime arrivalTime, string status, string departureAirport, int idPlane)
+        public Flight(int id, DateTime departureTime, DateTime arrivalTime, string status, string departureAirport, int idPlane, Plane plane)
         {
             Id = id;
             DepartureTime = departureTime;
@@ -43,6 +43,7 @@ namespace Database_connection.Models.FlightModule
             Status = status;
             DepartureAirport = departureAirport;
             IdPlane = idPlane;
+            Plane = plane;
         }
     }
 }

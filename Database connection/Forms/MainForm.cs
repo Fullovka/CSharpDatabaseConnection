@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Database_connection.Context;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -30,8 +31,18 @@ namespace Database_connection
             {
                 if (formAuthorization.TheAccountRole == "Администратор") 
                 {
-                    
+                    pagePost = new PagePost();
+                    TabPage tabPage = new TabPage();
+                    tabPage2.Text = "Должности";
+
+                    pagePost.Controls.Add(pagePost);
+                    tabControl1.TabPages.Add(tabPage2);
                 }
+
+                _db = new MainDBContext();
+
+                loadEmpl();
+                this.Show();
             }
         }
     }

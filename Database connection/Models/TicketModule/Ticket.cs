@@ -35,13 +35,15 @@ namespace Database_connection.Models.TicketModule
         [ForeignKey("IdPassenger")]
         public Passenger Passenger { get; set; }
 
-        public Ticket(int id, DateTime dateOfPurchase, decimal cost, int idFlight, int idPassenger)
+        public Ticket(int id, DateTime dateOfPurchase, decimal cost, int idFlight, Flight flight, int idPassenger, Passenger passenger)
         {
             Id = id;
             DateOfPurchase = dateOfPurchase;
             Cost = cost;
             IdFlight = idFlight;
+            Flight = flight;
             IdPassenger = idPassenger;
+            Passenger = passenger;
         }
     }
 }

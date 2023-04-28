@@ -42,7 +42,7 @@ namespace Database_connection.Models.AirportModule
         [ForeignKey("IdGate")]
         public Gate Gate { get; set; }
 
-        public Airport(int id, string name, string country, string city, string codeIATA, string codeICAO, int idGate)
+        public Airport(int id, string name, string country, string city, string codeIATA, string codeICAO, int idGate, Gate gate)
         {
             Id = id;
             Name = name;
@@ -51,6 +51,7 @@ namespace Database_connection.Models.AirportModule
             CodeIATA = codeIATA;
             CodeICAO = codeICAO;
             IdGate = idGate;
+            Gate = gate;
         }
     }
 }

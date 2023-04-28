@@ -28,11 +28,13 @@ namespace Database_connection.Models.Flight_AirportModule
         [ForeignKey("IdAirport")]
         public Airport Airport { get; set; }
         
-        public Flight_Airport(int id, int idFlight, int idAirport)
+        public Flight_Airport(int id, int idFlight, Flight flight, int idAirport, Airport airport)
         {
             Id = id;
             IdFlight = idFlight;
+            Flight = flight;
             IdAirport = idAirport;
+            Airport = airport;
         }
     }
 }

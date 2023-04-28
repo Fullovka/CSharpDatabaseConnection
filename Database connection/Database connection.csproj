@@ -71,14 +71,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Configuration\AccountModuleConfiguration\AccountConfiguration.cs" />
+    <Compile Include="Configuration\Account_RoleModuleConfiguration\Account_RoleConfiguration.cs" />
     <Compile Include="Configuration\AirlineModuleConfiguration\AirlineConfiguration.cs" />
     <Compile Include="Configuration\AirportModuleConfiguration\AirportConfiguration.cs" />
+    <Compile Include="Configuration\EmployeeModuleConfiguration\EmployeeConfiguration.cs" />
     <Compile Include="Configuration\FlightModuleConfiguration\FlightConfiguration.cs" />
     <Compile Include="Configuration\Flight_AirportModuleConfiguration\Flight_AirportConfiguration.cs" />
     <Compile Include="Configuration\GateModuleConfiguration\GateConfiguration.cs" />
     <Compile Include="Configuration\LuggageModuleConfiguration\LuggageConfiguration.cs" />
     <Compile Include="Configuration\PassengerModuleConfiguration\PassengerConfiguration.cs" />
     <Compile Include="Configuration\PlaneModuleConfiguration\PlaneConfiguration.cs" />
+    <Compile Include="Configuration\PostModuleConfiguration\PostConfiguration.cs" />
+    <Compile Include="Configuration\RoleModuleConfiguration\RoleConfiguration.cs" />
     <Compile Include="Configuration\TicketModuleConfiguration\TicketConfiguration.cs" />
     <Compile Include="Context\MainDBContext.cs" />
     <Compile Include="Forms\MainForm.cs">
@@ -93,14 +98,19 @@
     <Compile Include="Forms\FormAuthorization.Designer.cs">
       <DependentUpon>FormAuthorization.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\AccountModule\Account.cs" />
+    <Compile Include="Models\Account_RoleModule\Account_Role.cs" />
     <Compile Include="Models\AirlineModule\Airline.cs" />
     <Compile Include="Models\AirportModule\Airport.cs" />
+    <Compile Include="Models\EmployeeModule\Employee.cs" />
     <Compile Include="Models\FlightModule\Flight.cs" />
     <Compile Include="Models\Flight_AirportModule\Flight_Airport.cs" />
     <Compile Include="Models\GateModule\Gate.cs" />
     <Compile Include="Models\LuggageModule\Luggage.cs" />
     <Compile Include="Models\PassengerModule\Passenger.cs" />
     <Compile Include="Models\PlaneModule\Plane.cs" />
+    <Compile Include="Models\PostModule\Post.cs" />
+    <Compile Include="Models\RoleModule\Role.cs" />
     <Compile Include="Models\TicketModule\Ticket.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -167,6 +177,7 @@
   <ItemGroup>
     <None Include="Resources\key1.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
