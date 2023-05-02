@@ -25,3 +25,4 @@ D:\Front-end developed\C#\Windows Forms Application\Database connection\Database
 D:\Front-end developed\C#\Windows Forms Application\Database connection\Database connection\obj\Debug\Database connection.pdb
 D:\Front-end developed\C#\Windows Forms Application\Database connection\Database connection\obj\Debug\Database_connection.FormAuthorization.resources
 D:\Front-end developed\C#\Windows Forms Application\Database connection\Database connection\obj\Debug\Database_connection.MainForm.resources
+D:\Front-end developed\C#\Windows Forms Application\Database connection\Database connection\obj\Debug\Database_connection.PagePost.resources

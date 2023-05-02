@@ -1,4 +1,5 @@
 ﻿using Database_connection.Context;
+using Database_connection.Short;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,9 +14,18 @@ namespace Database_connection
 {
     public partial class MainForm : Form
     {
+        public MainDBContext _db;
+        public PagePost pagePost;
+
+        List <EmployeeShort> emplList = new List <EmployeeShort>();
+
+        BaseFilter filter = new BaseFilter();
+
         public MainForm()
         {
             InitializeComponent();
+
+            this.Hide();
         }
 
         private void MainForm_Load(object sender, EventArgs e)
